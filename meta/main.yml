@@ -1,0 +1,12 @@
+---
+galaxy_info:
+  author: Hamid Yousefi
+  description: Keepalived Service Installation or Configuration
+  license: GPL-2.0-or-later
+  platforms:
+    - name: Ubuntu
+      versions:
+        - 16.04
+  galaxy_tags:
+    - keepalived
+    - high-availability
