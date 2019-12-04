@@ -4,7 +4,7 @@
     package:
       - keepalived
       - libipset-dev
-    state: latest
+    state: present
   tags: installation
 
 - name: copying keepalive state script

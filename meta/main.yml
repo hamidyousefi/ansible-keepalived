@@ -8,10 +8,6 @@ galaxy_info:
   platforms:
     - name: Ubuntu
       versions:
-        - all
-    - name: Debian
-      versions:
-        - all
+        - xenial
   galaxy_tags:
     - keepalived
-    - high_availability
