@@ -1,0 +1,27 @@
+---
+- name: installing keepalived packages from distribution repositories
+  apt:
+    package:
+      - keepalived
+      - libipset-dev
+    state: latest
+  tags: installation
+
+- name: copying keepalive state script
+  copy:
+    src: keepalive.state.sh
+    dest: /usr/local/bin/keepalived.state.sh
+    mode: 0755
+    owner: root
+    group: root
+  tags: installation
+
+- name: configuring keepalived service
+  template:
+    src: keepalived.conf.j2
+    dest: /etc/keepalived/keepalived.conf
+  notify:
+    - enabling keepalived service
+    - restarting networking service
+    - restarting keepalived service
+  tags: configuration

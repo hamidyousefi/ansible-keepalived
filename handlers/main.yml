@@ -1,0 +1,15 @@
+---
+- name: enabling keepalived service
+  service:
+    name: keepalived
+    enabled: yes
+
+- name: restarting keepalived service
+  service:
+    name: keepalived
+    state: restarted
+
+- name: restarting networking service
+  service:
+    name: networking
+    state: restarted
