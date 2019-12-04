@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: keepalived
   author: Hamid Yousefi
   description: Keepalived Service Installation or Configuration
   license: GPL-2.0-or-later
