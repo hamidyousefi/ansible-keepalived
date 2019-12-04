@@ -4,10 +4,14 @@ galaxy_info:
   author: Hamid Yousefi
   description: Keepalived Service Installation or Configuration
   license: GPL-2.0-or-later
+  min_ansible_version: 2.8
   platforms:
     - name: Ubuntu
       versions:
-        - 16.04
+        - all
+    - name: Debian
+      versions:
+        - all
   galaxy_tags:
     - keepalived
-    - high-availability
+    - high_availability
